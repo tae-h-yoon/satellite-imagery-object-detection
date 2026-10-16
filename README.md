@@ -21,7 +21,7 @@ flowchart LR
     G --> H
 ```
 
-1. **Data and labeling:** approximately 20,000 ger instances labeled and exported from ArcGIS Pro as training chips.
+1. **Data and labeling:** approximately 20,000 ger instances were manually labeled in ArcGIS Pro and exported as training chips.
 2. **Model design:** Single Shot Detector (`arcgis.learn`) with a single square anchor shape suited to small, round, similarly sized objects.
 3. **Training:** learning-rate finder, then 15 epochs on a GPU node of an HPC cluster.
 4. **Inference and deduplication:** confidence threshold, non-maximum suppression, and a distance-based check that removes near-duplicate boxes.
